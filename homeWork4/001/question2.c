@@ -8,7 +8,6 @@ int main() {
     for (i = 0; i < 10; i++) {
         scanf("%d", &arr[i]);
     }
-
     printf("Original Array: ");
     for (i = 0; i < 10; i++) {
         printf("%d ", arr[i]);
@@ -17,7 +16,6 @@ int main() {
 
     start = arr;
     end = arr + 9;
-
     while (start < end) {
         temp = *start;
         *start = *end;
@@ -26,7 +24,6 @@ int main() {
         start++;
         end--;
     }
-
     printf("Reversed Array: ");
     for (i = 0; i < 10; i++) {
         printf("%d ", arr[i]);
